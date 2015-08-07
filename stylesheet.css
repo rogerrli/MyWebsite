@@ -1,4 +1,9 @@
 /* CSS Sheet for website.html */
+* {
+   margin: 0;
+   padding: 0;
+}
+
 body{
    background-color: #FDF3E7;
    margin: 0px 0px 0px 0px;
@@ -9,13 +14,19 @@ a {
    text-decoration: none;
 }
 
+.siteContent {
+   overflow: hidden;
+}
+
 .header {
    width: 100%;
-   position: relative;
+   position: fixed;
+   z-index: 9999;
    text-align: center;
 }
 
 .jumbotron {
+   position: relative;
 }
 
    .jumbotron img {
@@ -23,13 +34,39 @@ a {
       height: 500px;
    }
 
-.siteContent {
-   overflow: hidden;
+   .jumbotron h1 {
+      position: absolute;
+      top: 200px;
+      left: 20px;
+      width: 100%;
+      color: white;
+   }
 
+#about {
+   background-color: #EDE3D7;
+   height: 400px;
+}
+
+#resume {
+   height: 400px;
+}
+
+#skills {
+   background-color: #EDE3D7;
+   height: 400px;
+}
+
+#contact {
+   height: 400px;
+}
+
+#sectionHeader{
+   padding-left: 20px;
+   padding-top: 10px;
 }
 
 #siteName{
-   padding-top: 50px;
+   padding-top: 60px;
 }
 
 #navBlock{
@@ -38,18 +75,18 @@ a {
    width:100%;
 }
 
-   #navBlock ul{
-      height: inherit;
-   }
-
    #navBlock li {
-      display: inline-block;
+      display: inline;
       float: right;
       font-size: 100%;
       background-color: #CE4618;
       padding: 10px 10px 10px 10px;
-      margin: 0px 10px 10px 10px;
+      margin: 10px 10px 10px 10px;
       border-radius: 5px;
+   }
+
+   #navBlock li:hover {
+      background-color: #DE5628;
    }
 
       #navBlock li a {

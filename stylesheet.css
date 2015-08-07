@@ -1,0 +1,57 @@
+/* CSS Sheet for website.html */
+body{
+   background-color: #FDF3E7;
+   margin: 0px 0px 0px 0px;
+   font-family: sans-serif;
+}
+
+a {
+   text-decoration: none;
+}
+
+.header {
+   width: 100%;
+   position: relative;
+   text-align: center;
+}
+
+.jumbotron {
+}
+
+   .jumbotron img {
+      width: 100%;
+      height: 500px;
+   }
+
+.siteContent {
+   overflow: hidden;
+
+}
+
+#siteName{
+   padding-top: 50px;
+}
+
+#navBlock{
+   background-color: #C63D0F;
+   position: fixed;
+   width:100%;
+}
+
+   #navBlock ul{
+      height: inherit;
+   }
+
+   #navBlock li {
+      display: inline-block;
+      float: right;
+      font-size: 100%;
+      background-color: #CE4618;
+      padding: 10px 10px 10px 10px;
+      margin: 0px 10px 10px 10px;
+      border-radius: 5px;
+   }
+
+      #navBlock li a {
+         color: #3B3738;
+      }

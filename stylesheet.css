@@ -5,6 +5,7 @@ body {
    background-color: #636162;
    position: relative;
    font-family: "Trebuchet MS", Helvetica, sans-serif;
+   overflow-x: hidden;
 }
 
 a {
@@ -104,6 +105,7 @@ h1 {
 .resume {
    position: relative;
    background-color: #949494;
+
 }
 
 

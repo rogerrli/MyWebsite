@@ -2,18 +2,18 @@ var main = function() {
 
    $('.menu-icon').click(function(){
       if ($('.menu-icon').position().left === 0){
-         $('.menu').animate({left:"0px"}, 200);
-         $('.non-hidden').find('*').animate({left: "250"}, 200);
+         $('.menu').animate({left:"0px", duration:200, easing: "easeOutBounce"});
+         $('.non-hidden').find('*').show().animate({left: "250", duration: 200, easing: "easeOutBounce"});
       }
       else {
-         $('.menu').animate({left: "-250"}, 200);
-         $('.non-hidden *').animate({left: "0px"}, 200);
+         $('.menu').animate({left: "-250", duration:200, easing:"easeOutBounce"});
+         $('.non-hidden *').animate({left: "0px", duration: 200, easing:"easeOutBounce"});
       }
    });
 
    $('.close-icon').click(function(){
-      $('.menu').animate({left: "-250"}, 200);
-      $('.non-hidden *').animate({left: "0px"}, 200);
+      $('.menu').animate({left: "-250", duration:200, easing:"easeOutBounce"});
+      $('.non-hidden *').animate({left: "0px", duration:200, easing:"easeOutBounce"});
    });
 
    $('#home-button').click(function(){

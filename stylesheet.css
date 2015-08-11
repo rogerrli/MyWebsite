@@ -7,6 +7,7 @@ body {
    font-family: "Trebuchet MS", Helvetica, sans-serif;
    overflow-x: hidden;
    color: #FFFFFF;
+   word-wrap: break-word;
 }
 
 a {
@@ -45,7 +46,7 @@ a {
    background: #101014
 }
 
-.resume li {
+.resume > ul > li {
    display: inline;
    padding: 2px;
    border: #FFFFFF solid;
@@ -60,13 +61,18 @@ a {
    display: none;
 }
 
+#education-content:nth-child(4) ul > li{
+   display: inline;
+   float: left;
+}
+
 .content div {
    overflow: auto;
 }
 /*moves all immediate children of content so menu button doesn't overlap, except for jumbotron image. does not affect grandchildren.*/
 .content > div > *{
    margin-left:110px;
-   width: 80%;
+   width: 75%;
 }
 
 .menu-icon{
@@ -118,4 +124,13 @@ a {
 .contact{
    position: relative;
    background-color: #3A3A3A;
+}
+
+.contact li{
+   list-style-type: none;
+   display: inline;
+}
+
+.contact div{
+   display: inline;
 }

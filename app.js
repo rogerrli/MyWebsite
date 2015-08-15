@@ -95,5 +95,13 @@ var main = function() {
       }
    });
 
+   var d = new Date();
+   var month = d.getMonth() + 1;
+   var day = d.getDate();
+   var year = d.getFullYear();
+   var age = (year - 2014) * 365 + (month - 6) * 29.6 + (day - 6);
+   var distance = age * 3.9;
+   document.getElementById("oreo").innerHTML = "Oreo has ran " + distance + " miles!";
+
 }
 $(document).ready(main);

@@ -1,12 +1,17 @@
+/*
+   Color palette (light to dark)
+   background: f1f1ea
+*/
+
 body {
    left: 0;
    margin: 0;
    padding: 0;
-   background-color: #636162;
+   background-color: #F1F1EA;
    position: relative;
    font-family: "Trebuchet MS", Helvetica, sans-serif;
    overflow-x: hidden;
-   color: #FFFFFF;
+   color: #000000;
    word-wrap: break-word;
 }
 
@@ -19,7 +24,7 @@ a {
    position: fixed;
    width: 20%;
    height: 100%;
-   background: #202024
+   background-color: #3A3A3A;
 }
 
 .menu ul{
@@ -28,7 +33,7 @@ a {
    margin: 5px;
 }
 
-.menu li{
+.menu .tab{
    border: 1px solid #333333;
    list-style-type: none;
    font-size: 20px;
@@ -38,12 +43,35 @@ a {
    cursor: pointer;
 }
 
+.random{
+   position: absolute;
+   bottom: 0;
+}
+
+.random img{
+   height: 40%;
+   width: 40%;
+}
+
+.menu li{
+   list-style-type: none;
+   font-size: 20px;
+   padding: 2px;
+   margin: 10px 10px 0px 10px;
+}
+
+.menu .tab:hover{
+   background-color: #4A4A4A;
+   font-weight: bold;
+}
+
 .resume {
    left: -80%;
    position: fixed;
    width: 60%;
    height: 100%;
    background: #101014
+   <!--get backgound to match body background-->
 }
 
 .resume > ul > li {
@@ -51,6 +79,10 @@ a {
    padding: 2px;
    border: #FFFFFF solid;
    cursor: pointer;
+}
+
+.resume li{
+   margin-left: 5px;
 }
 
 .resume div{
@@ -100,6 +132,7 @@ a {
    width: 100%;
    position: relative;
    padding-top: 50%; /*height/width*/
+   color: #000000;
 }
 
 .jumbotron h1 {
@@ -109,21 +142,18 @@ a {
 .about {
    position: relative; /*needed to push when menu pops up*/
    display: block;
-   background-color: #3E5C5F;
+   height: 100vh;
+   background-color: #C0C0BB;
 }
 
 .project {
    position: relative;
-   background-color: #125358;
-}
-
-.education {
-   position: relative;
+   height: 100vh;
 }
 
 .contact{
    position: relative;
-   background-color: #3A3A3A;
+   background-color: #4A4A4A;
 }
 
 .contact li{
